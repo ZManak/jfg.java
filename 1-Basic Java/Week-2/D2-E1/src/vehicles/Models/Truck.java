@@ -1,5 +1,7 @@
 package vehicles.Models;
 
+import java.time.Year;
+
 public class Truck extends Vehicle implements Combustion {
     private int fuelCapacity;
     private int fuelConsumption;
@@ -17,6 +19,6 @@ public class Truck extends Vehicle implements Combustion {
 
     @Override
     public void getAntiquity() {
-        System.out.println("The truck is " + (2024 - getYear()) + " years old.");
+        System.out.println("The truck is " + (Year.now().getValue() - getYear()) + " years old.");
     }
 }

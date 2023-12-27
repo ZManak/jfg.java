@@ -1,5 +1,7 @@
 package vehicles.Models;
 
+import java.time.Year;
+
 public class Motorcycle extends Vehicle implements Combustion {
     private int cylinderCapacity;
     private int motorPower;
@@ -17,6 +19,6 @@ public class Motorcycle extends Vehicle implements Combustion {
 
     @Override
     public void getAntiquity() {
-        System.out.println("The motorcycle is " + (2024 - getYear()) + " years old.");
+        System.out.println("The motorcycle is " + (Year.now().getValue() - getYear()) + " years old.");
     }
 }

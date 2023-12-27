@@ -1,5 +1,7 @@
 package vehicles.Models;
 
+import java.time.Year;
+
 public class Car extends Vehicle implements Electric {
     private int batteryLife;
     private int autonomy;
@@ -17,6 +19,6 @@ public class Car extends Vehicle implements Electric {
 
     @Override
     public void getAntiquity() {
-        System.out.println("The car is " + (2024 - getYear()) + " years old.");
+        System.out.println("The car is " + (Year.now().getValue() - getYear()) + " years old.");
     }
 }

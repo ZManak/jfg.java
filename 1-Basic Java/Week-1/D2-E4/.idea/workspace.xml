@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="220b23c0-7aca-4b0e-b9d0-de3759531b7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -82,7 +83,10 @@
       <option name="presentableId" value="Default" />
       <updated>1702909617945</updated>
       <workItem from="1702909619009" duration="16000" />
-      <workItem from="1702912732643" duration="3973000" />
+      <workItem from="1702912732643" duration="4673000" />
+      <workItem from="1702918774686" duration="615000" />
+      <workItem from="1702947957029" duration="1560000" />
+      <workItem from="1702994703986" duration="1001000" />
     </task>
     <servers />
   </component>
