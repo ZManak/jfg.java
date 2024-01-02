@@ -17,7 +17,7 @@ public class Main {
             System.out.println("Enter product stock: ");
             int stock = scanner.nextInt();
             Product product = new Product(name, price, stock);
-            InterfaceFunction.InterfaceFunctional addItem = (Product[] products1, Product item) -> {
+            InterfaceFunction addItem = (Product[] products1, Product item) -> {
                 Product[] newProducts = new Product[products1.length + 1];
                 for (int i = 0; i < products1.length; i++) {
                     newProducts[i] = products1[i];

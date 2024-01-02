@@ -1,13 +1,12 @@
 package lambdas;
 
 import models.Product;
+import lambdas.InterfaceFunction;
 
 public class AddItem {
     public Product[] addItem(Product[] products, Product product) {
         Product[] newProducts = new Product[products.length + 1];
-        for (int i = 0; i < products.length; i++) {
-            newProducts[i] = products[i];
-        }
+        System.arraycopy(products, 0, newProducts, 0, products.length);
         newProducts[products.length] = product;
         return newProducts;
     }
