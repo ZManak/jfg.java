@@ -23,10 +23,14 @@ public class Main {
         );
 
         Stream<Employee> developers = employees.stream().filter(employee -> employee.getPosition().equals(Position.DEVELOPER));
-        System.out.println("Developers: " + developers.count());
+        List<Employee> developersList = developers.toList();
+        System.out.println("Developers: " + developersList.size());
+        developersList.forEach(employee -> System.out.println(employee.getName() + " " + employee.getSalary()));
         System.out.println("--------------------------------------------------");
         Stream<Employee> testers = employees.stream().filter(employee -> employee.getPosition().equals(Position.TESTER));
-        System.out.println(testers);
+        List<Employee> testersList = testers.toList();
+        System.out.println("Testers: " + testersList.size());
+        testersList.forEach(employee -> System.out.println(employee.getName() + " " + employee.getSalary()));
         System.out.println("--------------------------------------------------");
         Stream<Employee> designers = employees.stream().filter(employee -> employee.getPosition().equals(Position.DESIGNER));
         System.out.println(designers);
@@ -40,7 +44,7 @@ public class Main {
         //Filter by salary and return the list of employees with that salary
         Stream<Employee> highSalary = employees.stream().filter(employee -> employee.getSalary() > 700);
         for (Employee employee : highSalary.toArray(Employee[]::new)) {
-            System.out.println(employee.getName() + " " + employee.getSalary());
+            System.out.println("Salaries over 700: " + employee.getName() + " " + employee.getSalary());
         }
         System.out.println("--------------------------------------------------");
 
